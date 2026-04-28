@@ -37,6 +37,9 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+// ** elementor permissions issue ** //
+define('FS_METHOD', 'direct');
+
 /**#@+
  * Authentication unique keys and salts.
  *

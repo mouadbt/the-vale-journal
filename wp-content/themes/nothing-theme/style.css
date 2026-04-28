@@ -1,15 +1,31 @@
-/**
- * Theme Name:        Nothing Theme
- * Theme URI:         
- * Author:            Nothing Theme Team
- * Author URI:        
- * Description:       Nothing Theme: an ultra-minimal, functional WordPress theme.
- * Version:           1.0.1
- * License:           GNU General Public License v2 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       nothing-theme
- * Requires at least: 6.0
- * Tested up to:      6.8
- * Requires PHP:      7.4
- * Copyright:         Copyright (c) <?php echo date('Y'); ?> Nothing Theme Team
+/*
+ * Theme Name: Nothing Theme
+ * Version: 1.0.1
  */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Skip link - hidden by default, visible on focus */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    z-index: 9999;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 0;
+}
